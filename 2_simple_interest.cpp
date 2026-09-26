@@ -14,4 +14,5 @@ int main(){
     cout<<"interest:\n"<<overall_interest;
     totalamount_owned = overall_interest + principal_amount;
     cout<<"\ntotal amount:\n"<<totalamount_owned;
+    return 0;
     }
