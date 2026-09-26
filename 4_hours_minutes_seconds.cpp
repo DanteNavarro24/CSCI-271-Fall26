@@ -13,4 +13,5 @@ int main(){
     cout<<"hours:"<<hours<< endl;
     cout<<"minutes:"<<minutes<<endl;
     cout<<"seconds:"<<remaining_seconds<<endl;
+    return 0;
     }
