@@ -18,4 +18,5 @@ int main(){
     total_bill = (bill_amount + tip_amount);
     rounded_total = round(total_bill * 100)/100.0;
     cout<<"\nYour total is:\n"<<rounded_total;
+    return 0;
 }
