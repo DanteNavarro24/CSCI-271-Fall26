@@ -10,4 +10,5 @@ int main(){
     cin>>people;
     pay_per_person = total_bill / people;
     cout<<"Each person pays"<<pay_per_person;
+    return 0;
 }
