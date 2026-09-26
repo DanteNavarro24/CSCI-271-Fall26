@@ -13,4 +13,5 @@ int main(){
     cout<<"area:\n"<<area ;
     perimeter = (2*(length+width));
     cout<<"\nperimeter:\n"<<perimeter;
+    return 0;
     }
