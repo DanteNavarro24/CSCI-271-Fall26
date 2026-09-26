@@ -13,5 +13,5 @@ int main(){
     cout<<"radius:"<<radius<<endl;
     cout<<"area:"<<area<<endl;
     cout<<"perimeter:"<<perimeter<<endl;
-    
+    return 0;
 }
