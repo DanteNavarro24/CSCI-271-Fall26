@@ -21,5 +21,8 @@ int main(){
         if(length>(width*2)||width>(length*2)){
            cout<<"This is a long narrow rectangle"<<endl; 
         }
-    }return 0;
+    }else{
+        cout<<"The length and width must be positive";
+    }
+    return 0;
 }
