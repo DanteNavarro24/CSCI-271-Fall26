@@ -17,15 +17,11 @@ int main() {
     cout << "Enter the annual interest rate (as a decimal): ";
     getline(cin, input);
     rate = stod(input);
-
-    // Validate the interest rate
     while (rate <= 0) {
         cout << "Interest rate must be greater than 0. Enter again: ";
         getline(cin, input);
         rate = stod(input);
     }
-
-    // Calculate balance until it doubles
     while (balance < startingBalance * 2) {
         balance *= (1 + rate);
         years++;
