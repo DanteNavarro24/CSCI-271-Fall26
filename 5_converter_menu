@@ -1,0 +1,77 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    const double MILES_TO_KM = 1.60934;
+
+    int choice;
+    int celsius;
+    double distance;
+    string input;
+
+    do {
+        cout << "\n===== Unit Converter Menu =====" << endl;
+        cout << "1. Miles to Kilometers" << endl;
+        cout << "2. Kilometers to Miles" << endl;
+        cout << "3. Celsius to Fahrenheit" << endl;
+        cout << "4. Quit" << endl;
+        cout << "Enter your choice: ";
+
+        getline(cin, input);
+        choice = stoi(input);
+
+        switch (choice) {
+
+            case 1:
+                cout << "Enter distance in miles: ";
+                getline(cin, input);
+                distance = stod(input);
+
+                if (distance < 0) {
+                    cout << "Invalid distance. Cannot be negative."
+                         << endl;
+                }
+                else {
+                    cout << "Kilometers: "
+                         << distance * MILES_TO_KM << endl;
+                }
+                break;
+
+            case 2:
+                cout << "Enter distance in kilometers: ";
+                getline(cin, input);
+                distance = stod(input);
+
+                if (distance < 0) {
+                    cout << "Invalid distance. Cannot be negative."
+                         << endl;
+                }
+                else {
+                    cout << "Miles: "
+                         << distance / MILES_TO_KM << endl;
+                }
+                break;
+
+            case 3:
+                cout << "Enter temperature in Celsius: ";
+                getline(cin, input);
+                celsius = stoi(input);
+
+                cout << "Fahrenheit: "
+                     << static_cast<double>(celsius) * 9 / 5 + 32
+                     << endl;
+                break;
+
+            case 4:
+                cout << "Goodbye!" << endl;
+                break;
+
+            default:
+                cout << "Invalid choice." << endl;
+        }
+
+    } while (choice != 4);
+
+    return 0;
+}
